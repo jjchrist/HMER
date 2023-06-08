@@ -20,3 +20,11 @@ Model works with trigonometry, limits, algebraic equation.
 * limits should be written like " lim(expression, variable -> value) ". They will be converted to " Limit(expression, variable, value) "
 
 Model doesn't work with indices, definite integrals, roots.
+
+Used libraries:
+* tensorflow, keras, scikit-learn - for training and evaluating model
+* opencv - for image preprocessing (resizing, denoising, thresholdinbg, segmentation)
+* regex - for preparing expression to sympy format
+* sympy - to parse predicted expression and covert to LaTeX
+* PySimpleGUI - for simple user interface
+* and others (numpy, os, etc.)
