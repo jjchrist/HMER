@@ -9,3 +9,14 @@
 * **regexpr.py** - regular expression functions to prepare recognized expression before converting to LaTeX format
 * **train.ipynb** - notebook with a model training, trained models are saved in 'model' directory
  
+Trainig accuracy - 95%
+Validation_accuracy - 94%
+
+Model works with trigonometry, limits, algebraic equation. 
+* x2 = x\*\*2 
+* 3x = 3\*x
+* (x+1)2 = (x+1)\*2
+* 3(x+1) = 3\*(x+1)
+* limits should be written like " lim(expression, variable -> value) ". They will be converted to " Limit(expression, variable, value) "
+
+Model doesn't work with indices, definite integrals, roots.
